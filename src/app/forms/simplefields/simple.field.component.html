@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="field.type">
+  <string-field #simpleField
+    *ngSwitchCase="'string'"
+    [field]="field"
+    [input]="input"
+    (onChange)="handleChange($event)"
+  ></string-field>
+</ng-container>
